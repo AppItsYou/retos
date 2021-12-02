@@ -8,10 +8,9 @@ export const TodoAdd = ({ handleAddTodo }) => {
     });
 
     const handleSubmit = (e) => {
-
         e.preventDefault();
 
-        if (description.trim().length <= 2) {
+        if (description.trim().length <= 1) {
             return;
         }
 
@@ -38,7 +37,7 @@ export const TodoAdd = ({ handleAddTodo }) => {
                     type="text"
                     name="description"
                     className="form-control"
-                    placeholder="Agregar tarea ..."
+                    placeholder="Aprender ..."
                     autoComplete="off"
                     value={description}
                     onChange={handleInputChange}
